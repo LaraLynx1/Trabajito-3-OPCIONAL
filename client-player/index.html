@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PLAYER</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<h1>PLAYERsd</h1>
+		<h1>Create a New Player</h1>
+
+		<form id="user-form">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required />
+
+			<label for="choice">Choose Rock, Paper, or Scissors:</label>
+			<select id="choice" name="choice" required>
+				<option value="Rock">Rock</option>
+				<option value="Paper">Paper</option>
+				<option value="Scissors">Scissors</option>
+			</select>
+
+			<button type="button" id="jugar">Jugar</button>
+		</form>
+
+		<div id="data-container"></div>
+
+		<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
