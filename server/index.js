@@ -81,14 +81,14 @@ io.on('connection', (socket) => {
 
 			if (eleccion0 == 'Paper') {
 				if (eleccion1 == 'Rock') ganador = 'El ganador es ' + db.players[0].name;
-				if (eleccion1 == 'Paper') ganador = 'Empate. Ambos seleccionaron Rock';
+				if (eleccion1 == 'Paper') ganador = 'Empate. Ambos seleccionaron Paper';
 				if (eleccion1 == 'Scissors') ganador = 'El ganador es ' + db.players[1].name;
 			}
 
 			if (eleccion0 == 'Scissors') {
 				if (eleccion1 == 'Rock') ganador = 'El ganador es ' + db.players[1].name;
 				if (eleccion1 == 'Paper') ganador = 'El ganador es ' + db.players[0].name;
-				if (eleccion1 == 'Scissors') ganador = 'Empate. Ambos seleccionaron Rock';
+				if (eleccion1 == 'Scissors') ganador = 'Empate. Ambos seleccionaron Scissors';
 			}
 			const playerGanador = {
 				...player,
